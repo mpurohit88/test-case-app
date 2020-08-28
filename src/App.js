@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p data-testid='message'>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -19,6 +19,9 @@ function App() {
           Learn React
         </a>
       </header>
+      {/* <label htmlFor="emailid">Email Id</label> */}
+      <input placeholder="Enter Email Id" name="emailid" id="emailid" aria-label="Enter Email Id" />
+      <br /><br />
     </div>
   );
 }
